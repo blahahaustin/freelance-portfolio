@@ -1,18 +1,40 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Roboto+Condensed');
+
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  padding: 0;
+  margin: 5px;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+h1, li {
+  font-family: 'Bowlby One SC', cursive;
 }
 
-.App-title {
-  font-size: 1.5em;
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
-.App-intro {
-  font-size: large;
+li {
+  cursor: pointer;
+}
+
+.active-item {
+  color: red;
+}
+
+/* CSS GRID LAYOUT OPTIONS */
+.container {
+  display: grid;
+  grid-template-rows: auto;
+}
+
+/* @media all and (max-width: 1199px) { ... } */
+/* @media all and (max-width: 991px) { ... } */
+/* @media all and (max-width: 768px) { ... } */
+
+@media all and (max-width: 575px) {
+
+
 }

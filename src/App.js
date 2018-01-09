@@ -46,14 +46,12 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <PrevButton activeItem={this.state.activeItem} />
+      <div className="container">
         <Menu
           activeItem={this.state.activeItem}
           onClick={this.handleClick}
         />
         {this.renderPage()}
-        <NextButton activeItem={this.state.activeItem} />
       </div>
     );
   }

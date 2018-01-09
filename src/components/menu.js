@@ -20,8 +20,9 @@ export default class Menu extends Component {
     // Use a map function to iterate over them.
     const menuItems = sections.map((section, index) =>
       <li key={index}
-          onClick={this.handleClick.bind(this, index)}
           index={index}
+          onClick={this.handleClick.bind(this, index)}
+          className={ this.props.activeItem === index ? ("active-item") : ("")}
       >
         {section}
       </li>
