@@ -5,8 +5,6 @@ import WorkPage from './components/workPage.js';
 import SkillsPage from './components/skillsPage.js';
 import AboutPage from './components/aboutPage.js';
 import ContactPage from './components/contactPage.js';
-import PrevButton from './components/prevButton.js';
-import NextButton from './components/nextButton.js';
 import './App.css';
 
 class App extends Component {

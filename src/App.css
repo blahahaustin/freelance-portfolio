@@ -1,13 +1,21 @@
 @import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC|Roboto+Condensed');
 
-body {
+html, body {
+  box-sizing: border-box;
+  background: url('./images/background.png') no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  padding: 10px;
+  margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
-  padding: 0;
-  margin: 5px;
 }
 
 h1, li {
   font-family: 'Bowlby One SC', cursive;
+}
+
+p {
+  margin: 0;
 }
 
 ul {
@@ -21,13 +29,38 @@ li {
 }
 
 .active-item {
-  color: red;
+  color: #592e12;
 }
 
-/* CSS GRID LAYOUT OPTIONS */
+/* CSS GRID LAYOUT */
 .container {
   display: grid;
-  grid-template-rows: auto;
+  grid-template: 0px auto 0px / 4fr 1fr;
+  grid-gap: 3px;
+  height: 95vh;
+}
+
+.menu {
+  grid-column: 2 / 3;
+  grid-row: 1 / -1;
+  display: grid;
+  align-items: center;
+  justify-content: flex-start;
+
+  font-size: 2em;
+}
+
+.content {
+  /* background-color: red; */
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+}
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2em;
 }
 
 /* @media all and (max-width: 1199px) { ... } */

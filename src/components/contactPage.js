@@ -1,13 +1,10 @@
 import React, { Component } from 'react';
 import SocialIcon from './socialIcon.js';
-import NextButton from './nextButton.js';
-import PrevButton from './prevButton.js';
 
 export default class ContactPage extends Component {
   render() {
     return (
-      <div>
-        <PrevButton />
+      <div className="content">
         <h1>Taking new clients!</h1>
         <p>You can contact me on social media, linked below.</p>
         <SocialIcon linkTarget="mailto:austin.berbereia@gmail.com" altContent="Email"/>
