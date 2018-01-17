@@ -15,7 +15,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "aberb.tech",
+  "homepage": "https://blahahaustin.github.io",
   "devDependencies": {
     "gh-pages": "^1.1.0"
   }
