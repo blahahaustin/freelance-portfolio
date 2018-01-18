@@ -30,7 +30,7 @@ export default class Menu extends Component {
 
     // Return the generated list items in an unordered list.
     return(
-      <ul>{menuItems}</ul>
+      <ul className="menu-items">{menuItems}</ul>
     );
   }
 

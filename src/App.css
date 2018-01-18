@@ -2,10 +2,7 @@
 
 html, body {
   box-sizing: border-box;
-  background: url('./images/background.png') no-repeat center center fixed;
-  background-size: cover;
   height: 100%;
-  padding: 10px;
   margin: 0;
   font-family: 'Roboto Condensed', sans-serif;
 }
@@ -29,7 +26,7 @@ li {
 }
 
 .active-item {
-  color: #99662c;
+  text-decoration: underline;
 }
 
 /* CSS GRID LAYOUT */
@@ -37,7 +34,7 @@ li {
   display: grid;
   grid-template: 0px auto 0px / 4fr 1fr;
   grid-gap: 20px;
-  height: 95vh;
+  height: 100vh;
 }
 
 .menu {
@@ -45,9 +42,15 @@ li {
   grid-row: 1 / -1;
   display: grid;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
 
+  background: #843c51;
+  color: white;
   font-size: 2em;
+}
+
+.menu-items li:hover {
+  text-decoration: underline;
 }
 
 .content {
@@ -177,6 +180,7 @@ li {
 }
 
 .social-icon img {
+  margin: 20px;
   width: 100px;
   height: 100px;
 }
