@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import ProjectLink from './projectLink.js';
 
-import nandpic from '../images/nand-mahasuwan.png';
-import weatherpic from '../images/single-page-weather.png';
-import quotepic from '../images/random-quote-machine.png';
+import nandpic from '../images/nand-mahasuwan.jpg';
+import weatherpic from '../images/single-page-weather.jpg';
+import quotepic from '../images/random-quote-machine.jpg';
 
 export default class WorkPage extends Component {
   render() {
