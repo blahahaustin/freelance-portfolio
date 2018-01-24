@@ -19,6 +19,7 @@ export default class Menu extends Component {
 
     // Use a map function to iterate over them.
     const menuItems = sections.map((section, index) =>
+    <div key={index}>
       <li key={index}
           index={index}
           onClick={this.handleClick.bind(this, index)}
@@ -26,6 +27,7 @@ export default class Menu extends Component {
       >
         {section}
       </li>
+    </div>
     );
 
     // Return the generated list items in an unordered list.
@@ -38,7 +40,7 @@ export default class Menu extends Component {
     return (
       <div className="menu">
         <div>
-        {this.renderItems()}
+          {this.renderItems()}
         </div>
       </div>
     );

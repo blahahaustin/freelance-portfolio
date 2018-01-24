@@ -44,6 +44,7 @@ li {
   align-items: center;
   justify-content: center;
 
+
   background: #843c51;
   color: white;
   font-size: 2em;
@@ -54,7 +55,6 @@ li {
 }
 
 .content {
-  /* background-color: red; */
   grid-column: 1 / 2;
   grid-row: 1 / -1;
 }
@@ -63,9 +63,6 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.home-page {
   font-size: 2em;
 }
 
@@ -180,16 +177,136 @@ li {
 }
 
 .social-icon img {
-  margin: 20px;
+  margin: 15px;
   width: 100px;
   height: 100px;
 }
 
-/* @media all and (max-width: 1199px) { ... } */
-/* @media all and (max-width: 991px) { ... } */
-/* @media all and (max-width: 768px) { ... } */
+@media all and (max-width: 820px) {
+  .menu {
+    font-size: 1.5em;
+  }
 
-@media all and (max-width: 575px) {
+  .home-page {
+    font-size: 1.5em;
+  }
 
+  .work-page {
+    grid-template: repeat(3, 1fr) / repeat(12, 1fr);
+    grid-gap: 20px;
+    font-size: 1em;
+  }
+
+  .link-1 {
+    grid-column: 4 / 10;
+    grid-row: 1 / 2;
+    align-self: end;
+  }
+
+  .link-2 {
+    grid-column: 4 / 10;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+
+  .link-3 {
+    grid-column: 4 / 10;
+    grid-row: 3 / 4;
+    align-self: start;
+  }
+
+}
+
+@media all and (max-width: 640px) {
+  .container {
+    grid-template: 1fr 7fr / 1fr;
+    grid-gap: 20px;
+    height: 100vh;
+  }
+
+  .menu {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+  }
+
+  .menu-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .menu-items div {
+    margin: 10px;
+  }
+
+  .content {
+    grid-column: 1 / -1;
+    grid-row: 2 / 3;
+  }
+
+  .profile-photo {
+    grid-column: 3 / 11;
+    grid-row: 1 / 2;
+    align-self: flex-end;
+  }
+
+  .profile-blurb {
+    grid-column: 2 / 12;
+    grid-row: 2 / 3;
+    align-self: flex-start;
+  }
+}
+
+@media all and (max-width: 500px) {
+
+  .menu {
+    font-size: 1.5em;
+  }
+
+  .home-page {
+    font-size: 1.3em;
+  }
+
+  .link-1 {
+    grid-column: 3 / 11;
+    grid-row: 1 / 2;
+    align-self: end;
+  }
+
+  .link-2 {
+    grid-column: 3 / 11;
+    grid-row: 2 / 3;
+    align-self: center;
+  }
+
+  .link-3 {
+    grid-column: 3 / 11;
+    grid-row: 3 / 4;
+    align-self: start;
+  }
+
+  .social-icon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skillIcon img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .skills-page {
+    font-size: 1em;
+  }
+
+}
+
+@media all and (max-width: 430px) {
+
+  .home-page {
+    font-size: 1em;
+  }
 
 }
