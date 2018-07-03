@@ -152,10 +152,11 @@ li {
   grid-column: 2 / 7;
   grid-row: 1 / -1;
   max-width: 100%;
+  border-radius: 50%;
 }
 
 .profile-blurb {
-  grid-column: 7 / 12;
+  grid-column: 8 / 12;
   grid-row: 1 / -1;
 }
 
@@ -262,7 +263,7 @@ li {
 @media all and (max-width: 500px) {
 
   .menu {
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
 
   .home-page {
