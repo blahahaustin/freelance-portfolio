@@ -263,7 +263,7 @@ li {
 @media all and (max-width: 500px) {
 
   .menu {
-    font-size: 1.1em;
+    font-size: 14px;
   }
 
   .home-page {

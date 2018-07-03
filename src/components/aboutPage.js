@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import selfie from '../images/profile-photo.png';
+import selfie from '../images/profile-photo.jpg';
 
 export default class AboutPage extends Component {
   render() {
