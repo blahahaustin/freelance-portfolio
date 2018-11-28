@@ -11,7 +11,7 @@ export default class WorkPage extends Component {
       <div className="content work-page">
         <div className="link-1">
         <ProjectLink
-          linkTarget="http://www.nandmahasuwan.com"
+          linkTarget="https://blahahaustin.github.io/nand/"
           linkText="Nand Mahasuwan"
           imageSource={nandpic} />
         </div>
